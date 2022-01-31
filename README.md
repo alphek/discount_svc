@@ -1,10 +1,10 @@
-#DISCOUNT_SVC
+# DISCOUNT_SVC
 
 This project is a basic discount code generate and assign service 
 which can be used as a template for Docker compose - Django - Postgresql - PyTest implementations 
 ----
 
-##Useful Commands
+## Useful Commands
 * **Make build** >> to build docker compose
 * **Make test**  >>  to run test cases (pytest) 
 * **Make start** >>  to start and detach docker compose
@@ -15,7 +15,7 @@ which can be used as a template for Docker compose - Django - Postgresql - PyTes
 * **Make makemigrations** >> to create new Django migrations if changes made
 * **Make migrate** >> to make migrations did not make yet
 ____
-###Api Docs
+### Api Docs
 
 * **URL:** \
 /discount_code/brand/<int:brand_id>/<int:campaign_id>/
