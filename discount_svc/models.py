@@ -21,6 +21,13 @@ class DiscountCode(models.Model):
     create_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)
 
+    # more indexes can be added if new apis need it
+    class Meta:
+        indexes = [
+            models.Index(fields=['status']),
+            models.Index(fields=['campaign_id'])
+        ]
+
     def assign_to_customer(self, customer_id):
         self.customer_id = customer_id
         self.status = USED
